@@ -1,0 +1,26 @@
+# If you are not using Google Analytics, please change 'google-ID' to an empty string
+google-ID: ''
+
+menu: 
+  - name: What we do
+    submenu:
+      - name: What we do now
+        link: /whatwedo/whatwedonow
+      - name: Plans for the future...
+        link: /whatwedo/plansforthefuture
+      - name: Within Sierra Leone
+        link: /whatwedo/withinsierraleone
+      - name: Across Africa
+        link: /whatwedo/acrossafrica
+      - name: Bee-keeping
+        link: /whatwedo/beekeeping
+  - name: Who we are and how we got here
+    link: /whoweareandhowwegothere
+  - name: Underlying Principles
+    link: /underlyingprinciples
+  - name: Impact
+    link: /impact
+  - name: How you can help
+    link: /howyoucanhelp
+  
+    
