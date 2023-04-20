@@ -181,3 +181,35 @@ h3:before {
 	width: 100vw;
 	height: auto
 }
+
+.timeline {
+	position: relative;
+	width: 80%;
+	margin: 0 auto;
+	/* margin-bottom: 50px; */
+	z-index: 1;
+  }
+  
+  .line {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 50%;
+	border-left: 1.5px solid #719d7d;
+	border-radius: 10px;
+	z-index: 0;
+  }
+
+  .left-text {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+  }
+
+  /* .right-text {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+  } */
