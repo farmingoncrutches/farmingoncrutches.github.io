@@ -4,57 +4,54 @@ title: Impact
 permalink: /impact/
 ---
 
-<p>
-	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-</p>
+<img src="/assets/images/ourimpact2022.jpg" alt="Permaculture" width="100%" height="100%" class="img-in-text">
+
+<div style="display: flex; margin-bottom: 25px;">
+  <img src="/assets/images/impact1.jpg" alt="Permaculture" width="50%" height="50%">
+  <div style="margin-left: 50px;">
+    This transformation from disability into opportunity starts on the three-acre farm during a one-week course of training. Participants leave not
+    only with knowledge but also with tools and seeds and a small amount of cash to permit them to start farming at home. As well as earning a living, they
+    become changemakers in their communities, generating respect in the process.
+  </div>
+  
+</div>
+<div>Makieu Lahai (above) is now one of the trainers on the course.</div>
+
+<div style="display: flex; margin-bottom: 25px; margin-top: 50px;">
+  <div>
+    16-year-old Aminata Bellay (right) was trained in November 2022 and returned home to prepare her own garden where she works with her grandma to grow maize and vegetables.
+  </div>
+  <img src="/assets/images/impact2.jpg" alt="Permaculture" width="50%" height="50%">
+</div>
+
+<div style="display: flex; margin-bottom: 25px; margin-top: 50px;">
+  <img src="/assets/images/impact3.jpg" alt="Permaculture" width="50%" height="50%">
+  <div style ="margin-left: 50px;">
+    Amodu Amara also trained in November 2022 and is intercropping cucumber, maize, and okra - feeding his family, selling the surplus and sharing his knowledge with his community.
+  </div>
+</div>
+
+<div style="display: flex; margin-bottom: 25px; margin-top: 50px;">
+  <div style ="margin-right: 50px;">
+    Saffa lost an arm and Mariatu lost a leg during the war. Meeting on a training course they decided to share their lives together on a
+    four-acre farm producing rice and vegetables and to share their knowledge with their local community (add video clip).
+  </div>
+  <img src="/assets/images/impact4.jpg" alt="Permaculture" width="50%" height="50%">
+</div>
+
+<img src="/assets/images/impact5.jpg" alt="Permaculture" width="50%" height="50%">
+<div>
+  Amodu Amara is an Amputee footballer and farmer. He lives in Bo City. In the video he is
+  introducing his farm after the training course. He said, he is planting cucumber, maize, and
+  okra and he is practicing the sustainable agriculture training he just learnt from the SLASA.
+  Today he is saying, &quot;my family can earn 50 Leones (£2) very early in the morning just on
+  vegetable sales for money for our pocket and in addition we take home some
+  harvest for family consumption. The community say that they admire him. He is speaking
+  Creole but you will pick out words like "sustainable agriculture", "hard work" and
+  "admired"!
+</div>
 
 <center>
   <iframe width="560" height="315" src="https://www.youtube.com/embed/NbnPqFft4Rg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-  </center>
+</center>
 
-{% comment%}
-Here we generate all the tags.
-{% endcomment%}
-
-{% assign rawtags = "" %}
-{% for post in site.posts %}
-{% assign ttags = post.tags | join:'|' | append:'|' %}
-{% assign rawtags = rawtags | append:ttags %}
-{% endfor %}
-
-{% assign rawtags = rawtags | split:'|' | sort %}
-
-{% assign tags = "" %}
-
-{% for tag in rawtags %}
-{% if tag != "" %}
-
-{% if tags == "" %}
-{% assign tags = tag | split:'|' %}
-{% endif %}
-
-{% unless tags contains tag %}
-{% assign tags = tags | join:'|' | append:'|' | append:tag | split:'|' %}
-{% endunless %}
-{% endif %}
-{% endfor %}
-
-<br/>
-
-{% for tag in tags %}
-<a class="label label-success" href="#{{ tag | slugify }}" > {{ tag }} </a> &nbsp;
-{% endfor %}
-{% for tag in tags %}
-<h4 id="{{ tag | slugify }}">{{ tag }}</h4>
-<ul>
-  {% for post in site.posts %}
-  {% if post.tags contains tag %}
-  <li>
-      <a href="{{ post.url }}">
-        {{ post.title }}
-      </a>
-  </li>
-  {% endif %}
-  {% endfor %}
-</ul>
-{% endfor %}

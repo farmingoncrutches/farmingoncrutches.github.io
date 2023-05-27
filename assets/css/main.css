@@ -177,10 +177,22 @@ h3:before {
 	}
 }
 
+.img-in-text {
+	margin-bottom: 25px;
+}
+
 .img-responsive {
 	width: 100vw;
 	height: auto
 }
+
+table {
+	margin-bottom: 25px;
+}
+
+th, td {
+	padding: 15px;
+  }
 
 .timeline {
 	position: relative;
