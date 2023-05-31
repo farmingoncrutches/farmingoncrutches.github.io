@@ -83,6 +83,7 @@ h3:before {
 
 .navbar-default .navbar-brand {
 	color: #ffffff;
+	padding: 20%;
 }
 
 .navbar-default .navbar-brand:hover,
@@ -367,13 +368,36 @@ h3:before {
 }
 
 div.sections>div:nth-of-type(even) {
-	flex-direction: row-reverse;
+	@media (min-width: 1000px) {
+		flex-direction: row-reverse;
 
-	.text {
-		padding-left: 10em;
-		padding-right: 0em;
+		.text {
+			padding-left: 10em;
+			padding-right: 0em;
+		}
 	}
 
+
+
+}
+
+@media (max-width: 1000px) {
+	.section-card {
+		flex-direction: column-reverse;
+		align-items: center;
+
+		.text {
+			width: 100%;
+			padding: 10%;
+		}
+
+		.image {
+			width: 50%;
+			padding-top: 50%;
+			background-size: cover;
+			border-radius: 2em;
+		}
+	}
 }
 
 div.chapters>div:nth-of-type(even) {
@@ -408,8 +432,9 @@ div.chapters>div:nth-of-type(even) {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding-left: 5vw;
-	padding-right: 5vw;
+	padding-left: 10vw;
+	padding-right: 10vw;
+
 }
 
 
@@ -436,6 +461,12 @@ div.chapters>div:nth-of-type(even) {
 	justify-content: center;
 }
 
+@media (max-width: 1000px) {
+	.donation-cards-row {
+		flex-direction: column;
+	}
+}
+
 .donation-card-20 {
 	display: flex;
 	width: 45%;
@@ -451,6 +482,7 @@ div.chapters>div:nth-of-type(even) {
 	border-radius: 2em;
 
 	margin-right: 10vh;
+	transition: 0.3s;
 
 	.donation-card-title {
 		margin: 1em;
@@ -497,6 +529,7 @@ div.chapters>div:nth-of-type(even) {
 	display: flex;
 
 	background-color: black;
+	transition: 0.3s;
 
 	.donation-card-title {
 		margin: 1em;
@@ -525,5 +558,46 @@ div.chapters>div:nth-of-type(even) {
 		margin: 1em;
 		text-align: left;
 	}
+}
 
+.donation-card-20:hover,
+.donation-card-20:focus-within {
+	transform: translatey(-10px);
+}
+
+.donation-card-50:hover,
+.donation-card-50:focus-within {
+	transform: translatey(-10px);
+}
+
+.home-page {
+	width: 100vw;
+	height: 100vh;
+
+	.home-page-logo {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		// font-weight: 900;
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		.home-page>.home-page-logo>img {
+			position: relative;
+
+		}
+	}
+}
+
+.home-page-image {
+	height: 110vh;
+	width: 110vw;
+	overflow: hidden;
+	filter: blur(50px);
+	transform: translateX(-5vw);
+
+	background-size: cover;
 }
