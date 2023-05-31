@@ -14,14 +14,14 @@ menu:
   #       link: /whatwedo/acrossafrica
   #     - name: Bee-keeping
   #       link: /whatwedo/beekeeping
+  - name: What we do
+    link: /about
   - name: Our Story
     link: /story
   - name: Underlying Principles
     link: /principles
   - name: Impact
     link: /impact
-  - name: What we do
-    link: /about
   - name: How you can help
     link: /donate
 
