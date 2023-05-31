@@ -250,8 +250,9 @@ h3:before {
 
 .header-img {
 	width: 110%;
-	filter: blur(35px);
-	transform: translateX(-5vw)
+	filter: blur(0px);
+	transform: translateX(-5vw);
+	transform: translateY(3.5vw)
 }
 
 .chapters {
