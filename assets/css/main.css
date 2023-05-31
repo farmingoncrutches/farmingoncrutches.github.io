@@ -461,12 +461,13 @@ div.chapters>div:nth-of-type(even) .title {
 
 .donation-card-20 .donation-card-title .duration {
 	color: gray;
-	float: left
+	float: left;
+	font-size: 0.5em
 }
 
 .donation-card-20 .description {
 	color: #000;
-	font-size: 2em;
+	font-size: 1.75em;
 	margin: 1em;
 	text-align: left
 }
@@ -504,12 +505,13 @@ div.chapters>div:nth-of-type(even) .title {
 
 .donation-card-50 .donation-card-title .duration {
 	color: gray;
-	float: left
+	float: left;
+	font-size: 0.5em
 }
 
 .donation-card-50 .description {
 	color: #fff;
-	font-size: 2em;
+	font-size: 1.75em;
 	margin: 1em;
 	text-align: left
 }
