@@ -36,6 +36,24 @@ h3:before {
 	font-size: 1.3em
 }
 
+.goalcontainer {
+	display: flex;
+	align-items: center;
+}
+
+.goalcontainer img {
+	display: grid;
+  	place-items: center;
+	margin-right: 100px;
+	width: 20%;
+  }
+
+.goalcontainer p {
+	font-family: "ClashGrotesk-Bold";
+	font-size: 2em;
+	width: 50%;
+}
+
 .jumbotron {
 	background: #719d7d
 }
