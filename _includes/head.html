@@ -1,6 +1,6 @@
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" type="image/png" href="/icon.png" />
 
   <meta name="twitter:card" content="summary_large_image">
@@ -14,34 +14,34 @@
 
 
   {% if page.description %}
-	  <meta name="description" content="{{page.description}}" />
-	  <meta property="og:description" content="{{page.description}}" />
-	  <meta name="twitter:description" content="{{page.description}}">
+  <meta name="description" content="{{page.description}}" />
+  <meta property="og:description" content="{{page.description}}" />
+  <meta name="twitter:description" content="{{page.description}}">
 
   {% else %}
-	  <meta name="description" content="{{page.excerpt | strip_html | strip}}" />
-	  <meta property="og:description" content="{{page.excerpt | strip_html| strip}}" />
-	  <meta name="twitter:description" content="{{page.excerpt | strip_html| strip}}">
+  <meta name="description" content="{{page.excerpt | strip_html | strip}}" />
+  <meta property="og:description" content="{{page.excerpt | strip_html| strip}}" />
+  <meta name="twitter:description" content="{{page.excerpt | strip_html| strip}}">
   {% endif %}
   <link rel="canonical" href="{{site.url}}{{page.url}}" />
   <meta property="og:url" content="{{site.url}}{{page.url}}" />
   <meta name="twitter:url" content="{{site.url}}{{page.url}}">
 
   <meta property="og:site_name" content="{{site.name}}" />
- 
+
   {% if page.categories %}
-	  {% for category in page.categories limit:1 %}
-	  <meta content="{{ category }}" property="article:section">
-	  {% endfor %}
+  {% for category in page.categories limit:1 %}
+  <meta content="{{ category }}" property="article:section">
+  {% endfor %}
   {% endif %}
 
   {% if page.tags %}
-	  {% for tag in page.tags %}
-	  <meta content="{{ tag }}" property="article:tag">
-	  {% endfor %}
+  {% for tag in page.tags %}
+  <meta content="{{ tag }}" property="article:tag">
+  {% endfor %}
   {% endif %}
 
-    <script type="application/ld+json">
+  <script type="application/ld+json">
 {"@context": "http://schema.org",
 "@type": "BlogPosting",
 "headline": "{{page.title}}",
@@ -53,10 +53,10 @@
   {% endif %}
 "url": "{{site.url}}{{page.url}}"}</script>
 
-  
-  	<meta property="og:type" content="website" />
 
-  	    <script type="application/ld+json">
+  <meta property="og:type" content="website" />
+
+  <script type="application/ld+json">
 {"@context": "http://schema.org",
 "@type": "WebSite",
 "headline": "{{page.title}}",
@@ -66,18 +66,20 @@
 "description": "{{page.excerpt | strip_html}}",
   {% endif %}
 "url": "{{site.url}}{{page.url}}"}</script>
- 
 
-  <link rel="author" href="{{site.author}}"/>
 
-   <!-- End SEO stuff -->
+  <link rel="author" href="{{site.author}}" />
+
+  <!-- End SEO stuff -->
 
   <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="/assets/css/font-awesome/css/font-awesome.min.css" />
-  <link rel="stylesheet" href="/assets/css/main.css" />
-   <link href="/assets/css/syntax.css" rel="stylesheet">
-
+  <!-- <link rel="stylesheet" href="/assets/css/font-awesome/css/font-awesome.min.css" /> -->
   <script src="/assets/js/jquery.min.js"></script>
   <script src="/assets/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="/assets/css/clash-grotesk.css" />
+  <link href="/assets/css/syntax.css" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css" />
+
 
 </head>

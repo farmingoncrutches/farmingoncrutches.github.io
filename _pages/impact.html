@@ -1,60 +1,95 @@
 ---
-layout: default
+layout: custom
 title: Impact
 permalink: /impact/
+top-img: /assets/images/top.jpg
 ---
 
-<p>
-	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-</p>
+<div class="chapters">
+	<div class="sections">
+		<div class="title">
+			2022
+		</div>
+		<div class="section-paragraph">
+			<strong>SLASA trained 45 farmers on crutches in 2022, most of whom have gone on to setup farms and
+				enterprises in their communities.</strong>
+		</div>
 
-<center>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/NbnPqFft4Rg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-  </center>
+		<div class="section-paragraph">
+			This transformation from disability into opportunity starts on the three-acre farm during a one-week course
+			of training.
+			Participants leave not only with knowledge but also with tools and seeds and a small amount of cash to
+			permit them to
+			start farming at home. As well as earning a living, they become changemakers in their communities,
+			generating respect in
+			the process.
+		</div>
+	</div>
 
-{% comment%}
-Here we generate all the tags.
-{% endcomment%}
+	<div class="sections">
+		<div class="title">
+			Those we helped
+		</div>
 
-{% assign rawtags = "" %}
-{% for post in site.posts %}
-{% assign ttags = post.tags | join:'|' | append:'|' %}
-{% assign rawtags = rawtags | append:ttags %}
-{% endfor %}
+		<div class="section-card">
+			<div class="text">
+				<div class="title">Amodu Amara</div>
+				<div class="paragraph">
+					Amodu Amara also trained in November 2022 and is intercropping cucumber, maize, and okra - feeding
+					his family, selling
+					the surplus and sharing his knowledge with his community. He is an Amputee footballer and farmer. He
+					lives in Bo City. In the video he is introducing his farm after the
+					training course. He said, he is planting cucumber, maize, and okra and he is practicing the
+					sustainable agriculture
+					training he just learnt from the SLASA. Today he is saying, "my family can earn 50 Leones (£2) very
+					early in the morning
+					just on vegetable sales for money for our pocket and in addition we take home some harvest for
+					family consumption. The
+					community say that they admire him. He is speaking Creole but you will pick out words like
+					"sustainable agriculture",
+					"hard work" and "admired"!
+				</div>
+			</div>
+			<div class="image" style="background-image:url('/assets/images/aa.jpg');">
+			</div>
+		</div>
 
-{% assign rawtags = rawtags | split:'|' | sort %}
+		<div class="section-card">
+			<div class="text">
+				<div class="title">Saffa and Mariatu</div>
+				<div class="paragraph">
+					Saffa lost an arm and Mariatu lost a leg during the war. Meeting on a training course they decided
+					to share their lives
+					together on a four-acre farm producing rice and vegetables and to share their knowledge with their
+					local community.
+				</div>
+			</div>
+			<div class="image" style="background-image:url('/assets/images/sm.jpg');">
+			</div>
+		</div>
 
-{% assign tags = "" %}
+		<div class="section-card">
+			<div class="text">
+				<div class="title">Makieu Lahai</div>
+				<div class="paragraph">
+					Makieu Lahai is now one of the trainers on the course.
+				</div>
+			</div>
+			<div class="image" style="background-image:url('/assets/images/ml.jpg');">
+			</div>
+		</div>
 
-{% for tag in rawtags %}
-{% if tag != "" %}
-
-{% if tags == "" %}
-{% assign tags = tag | split:'|' %}
-{% endif %}
-
-{% unless tags contains tag %}
-{% assign tags = tags | join:'|' | append:'|' | append:tag | split:'|' %}
-{% endunless %}
-{% endif %}
-{% endfor %}
-
-<br/>
-
-{% for tag in tags %}
-<a class="label label-success" href="#{{ tag | slugify }}" > {{ tag }} </a> &nbsp;
-{% endfor %}
-{% for tag in tags %}
-<h4 id="{{ tag | slugify }}">{{ tag }}</h4>
-<ul>
-  {% for post in site.posts %}
-  {% if post.tags contains tag %}
-  <li>
-      <a href="{{ post.url }}">
-        {{ post.title }}
-      </a>
-  </li>
-  {% endif %}
-  {% endfor %}
-</ul>
-{% endfor %}
+		<div class="section-card">
+			<div class="text">
+				<div class="title">Aminata Bellay</div>
+				<div class="paragraph">
+					16-year-old Aminata Bellay was trained in November 2022 and returned home to prepare her own garden
+					where she
+					works with her grandma to grow maize and vegetables.
+				</div>
+			</div>
+			<div class="image" style="background-image:url('/assets/images/ab.jpg');">
+			</div>
+		</div>
+	</div>
+</div>
