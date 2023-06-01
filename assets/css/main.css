@@ -32,10 +32,6 @@ h3:before {
 	counter-increment: h3counter
 }
 
-li{
-	margin: 10px 0;
-  }
-
 .container {
 	font-size: 1.3em
 }
@@ -304,6 +300,11 @@ li{
 	background-size: cover;
 	border-radius: 2em
 }
+
+.sections .section-paragraph li{
+	margin: 10px 0;
+  }
+
 
 .sections>* {
 	margin-bottom: 10vh
