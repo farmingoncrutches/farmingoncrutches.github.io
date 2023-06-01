@@ -32,6 +32,10 @@ h3:before {
 	counter-increment: h3counter
 }
 
+li{
+	margin: 10px 0;
+  }
+
 .container {
 	font-size: 1.3em
 }
