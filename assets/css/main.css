@@ -503,7 +503,7 @@ div.chapters>div:nth-of-type(even) .title {
 	border-radius: 2em;
 	display: flex;
 	background-color: #000;
-	transition: .3s;
+	transition: .25s;
 	background: linear-gradient(to right, #72C0A7, #68C5DB);
 }
 
