@@ -43,10 +43,10 @@ h3:before {
 
 .goalcontainer img {
 	display: grid;
-  	place-items: center;
+	place-items: center;
 	margin-right: 100px;
 	width: 20%;
-  }
+}
 
 .goalcontainer p {
 	font-family: "ClashGrotesk-Bold";
@@ -286,7 +286,7 @@ h3:before {
 }
 
 .sections .section-paragraph {
-	font-size: 2em;
+	font-size: 1.75em;
 	line-height: normal;
 	font-weight: normal;
 	font-family: "ClashGrotesk-light";
@@ -301,9 +301,9 @@ h3:before {
 	border-radius: 2em
 }
 
-.sections .section-paragraph li{
+.sections .section-paragraph li {
 	margin: 10px 0;
-  }
+}
 
 
 .sections>* {
@@ -364,7 +364,7 @@ h3:before {
 	border-radius: 2em
 }
 
-@media(min-width: 1000px) {
+@media(min-width: 767px) {
 	div.sections>div:nth-of-type(even) {
 		flex-direction: row-reverse
 	}
@@ -375,10 +375,21 @@ h3:before {
 	}
 }
 
-@media(max-width: 1000px) {
+@media(max-width: 767px) {
+	.sections {
+		width: 100vw;
+		border-radius: 0;
+		font-size: 0.8em;
+	}
+
+	.sections .title {
+		font-size: 2.5em;
+		/* text-align: start; */
+	}
+
 	.section-card {
 		flex-direction: column-reverse;
-		align-items: center
+		align-items: center;
 	}
 
 	.section-card .text {
@@ -391,6 +402,10 @@ h3:before {
 		padding-top: 50%;
 		background-size: cover;
 		border-radius: 2em
+	}
+
+	.navbar-brand {
+		visibility: hidden;
 	}
 }
 
@@ -446,10 +461,15 @@ div.chapters>div:nth-of-type(even) .title {
 	justify-content: center
 }
 
-@media(max-width: 1000px) {
+@media(max-width: 767px) {
+	.donation-cards {
+		visibility: hidden;
+	}
+
 	.donation-cards-row {
 		flex-direction: column
 	}
+
 }
 
 .donation-card-20 {
