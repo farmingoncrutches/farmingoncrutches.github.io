@@ -364,51 +364,6 @@ h3:before {
 	border-radius: 2em
 }
 
-@media(min-width: 767px) {
-	div.sections>div:nth-of-type(even) {
-		flex-direction: row-reverse
-	}
-
-	div.sections>div:nth-of-type(even) .text {
-		padding-left: 10em;
-		padding-right: 0em
-	}
-}
-
-@media(max-width: 767px) {
-	.sections {
-		width: 100vw;
-		border-radius: 0;
-		font-size: 0.8em;
-	}
-
-	.sections .title {
-		font-size: 2.5em;
-		/* text-align: start; */
-	}
-
-	.section-card {
-		flex-direction: column-reverse;
-		align-items: center;
-	}
-
-	.section-card .text {
-		width: 100%;
-		padding: 10%
-	}
-
-	.section-card .image {
-		width: 50%;
-		padding-top: 50%;
-		background-size: cover;
-		border-radius: 2em
-	}
-
-	.navbar-brand {
-		visibility: hidden;
-	}
-}
-
 div.chapters>div:nth-of-type(even) {
 	background-color: #000;
 	color: #fff
@@ -462,12 +417,13 @@ div.chapters>div:nth-of-type(even) .title {
 }
 
 @media(max-width: 767px) {
-	.donation-cards {
-		visibility: hidden;
-	}
-
 	.donation-cards-row {
 		flex-direction: column
+	}
+
+	.donation-button {
+		/* width: 85%; */
+		/* font-size: 3em; */
 	}
 
 }
@@ -485,7 +441,8 @@ div.chapters>div:nth-of-type(even) .title {
 	border-width: 1em;
 	border-radius: 2em;
 	margin-right: 10vh;
-	transition: .3s
+	transition: .3s;
+	background: linear-gradient(to right, #72C0A7, #41C7F0);
 }
 
 .donation-card-20 .donation-card-title {
@@ -529,7 +486,44 @@ div.chapters>div:nth-of-type(even) .title {
 	border-radius: 2em;
 	display: flex;
 	background-color: #000;
-	transition: .3s
+	transition: .3s;
+	background: linear-gradient(to right, #72C0A7, #68C5DB);
+}
+
+.donation-button {
+	width: 95%;
+	background-size: cover;
+	border-radius: 2em;
+	flex-direction: row-reverse;
+	align-items: center;
+	position: relative;
+	/* border-style: solid; */
+	border-color: #000;
+	border-width: 1em;
+	border-radius: 2em;
+	display: flex;
+	background-color: #000;
+	transition: .3s;
+	background: linear-gradient(to right, #72C0A7, #68C5DB);
+}
+
+.donation-button:hover,
+.donation-button:focus-within {
+	transform: translatey(-10px)
+}
+
+.donation-button .text {
+	width: 100%;
+	align-self: center;
+	padding-left: 0em;
+	/* padding-right: 10em; */
+	/* padding-bottom: 2em; */
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	font-size: 5em;
+	font-family: "ClashGrotesk-Bold";
+
 }
 
 .donation-card-50 .donation-card-title {
@@ -548,7 +542,7 @@ div.chapters>div:nth-of-type(even) .title {
 }
 
 .donation-card-50 .donation-card-title .duration {
-	color: gray;
+	color: white;
 	float: left;
 	font-size: 0.5em
 }
@@ -597,4 +591,68 @@ div.chapters>div:nth-of-type(even) .title {
 	filter: blur(50px);
 	transform: translateX(-5vw);
 	background-size: cover
+}
+
+.module-border-wrap {
+	max-width: 250px;
+	padding: 1rem;
+	position: relative;
+	background: linear-gradient(to right, red, purple);
+	padding: 3px;
+}
+
+.module {
+	background: #222;
+	color: white;
+	padding: 2rem;
+}
+
+@media(min-width: 767px) {
+	div.sections>div:nth-of-type(even) {
+		flex-direction: row-reverse
+	}
+
+	div.sections>div:nth-of-type(even) .text {
+		padding-left: 10em;
+		padding-right: 0em
+	}
+}
+
+@media(max-width: 767px) {
+	.header-img-container {
+		display: none;
+		visibility: hidden;
+	}
+
+	.sections {
+		width: 100vw;
+		border-radius: 0;
+		font-size: 0.8em;
+	}
+
+	.sections .title {
+		font-size: 2.5em;
+		/* text-align: start; */
+	}
+
+	.section-card {
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+
+	.section-card .text {
+		width: 100%;
+		padding: 10%
+	}
+
+	.section-card .image {
+		width: 50%;
+		padding-top: 50%;
+		background-size: cover;
+		border-radius: 2em
+	}
+
+	.navbar-brand {
+		visibility: hidden;
+	}
 }
