@@ -697,6 +697,7 @@ div.chapters>div:nth-of-type(even) .title {
 
 	.sections .title {
 		font-size: 2.5em;
+		width: 85%;
 		/* text-align: start; */
 	}
 
