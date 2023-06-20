@@ -234,6 +234,7 @@ h3:before {
 	position: relative;
 	width: 100vw;
 	display: flex;
+	padding-top: 10vh;
 }
 
 .header-img-container {
@@ -253,9 +254,9 @@ h3:before {
 	/* top: 50%; */
 	/* left: 50%; */
 	/* transform: translate(-50%, -50%); */
-	width: 40%;
+	width: 50%;
 	padding-right: 4vw;
-	font-size: 4vw;
+	font-size: 5vw;
 	text-transform: uppercase;
 	letter-spacing: .05em;
 	line-height: 1.5em;
