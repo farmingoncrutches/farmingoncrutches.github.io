@@ -2,13 +2,16 @@
 	{% include navbar.html %}
 	{% if page.noimage %}
 	{% else %}
-	<div class="header-img-container">
-		<img alt="{{ page.title }}" src="{{ page.top-img }}" class="header-img">
-		{% endif %}
-		<div class="text">
-			{{ page.title }}
+	<div class="header-img-box">
+		<div class="header-img-container">
+			{% endif %}
+			<div class="text">
+				{{ page.title }}
+			</div>
+			<img alt="{{ page.title }}" src="{{ page.top-img }}" class="header-img">
 		</div>
 	</div>
+
 
 
 	<!-- <div class=" jumbotron clearfix">

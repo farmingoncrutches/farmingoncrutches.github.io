@@ -182,7 +182,7 @@ h3:before {
 	color: #fff
 }
 
-@media(max-width: 767px) {
+@media(max-width: 812px) {
 	.navbar-default .navbar-nav .open .dropdown-menu>li>a {
 		color: #fff
 	}
@@ -229,30 +229,52 @@ h3:before {
 	transform: translateY(-50%)
 }
 
-.header-img-container {
+.header-img-box {
 	position: relative;
-	width: 100vw
+	width: 100vw;
+	display: flex;
 }
 
-.header-img-container .text {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	font-size: 6em;
+.header-img-container {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	padding-top: 10vh;
+	/* padding-bottom: 3vw; */
+	padding-right: 5vw;
+	padding-left: 5vw;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header-img-box .header-img-container .text {
+	/* position: absolute; */
+	/* top: 50%; */
+	/* left: 50%; */
+	/* transform: translate(-50%, -50%); */
+	width: 40%;
+	font-size: 5vw;
 	text-align: center;
 	text-transform: uppercase;
-	letter-spacing: .2em;
+	letter-spacing: .05em;
 	line-height: 1.5em;
-	color: #fff;
-	font-family: "ClashGrotesk-Bold"
+	color: black;
+	font-family: "ClashGrotesk-Bold";
+	text-align: start;
+	background: linear-gradient(to right, #72C0A7, #41C7F0);
+	/* Define your gradient colors */
+	-webkit-background-clip: text;
+	/* For Safari and older Chrome versions */
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	/* Make the text transparent */
+	text-fill-color: transparent;
 }
 
 .header-img {
-	width: 110%;
+	border-radius: 2em;
+	width: 60%;
 	filter: blur(0px);
-	transform: translateX(-5vw);
-	transform: translateY(3.5vw)
 }
 
 .chapters {
@@ -416,7 +438,7 @@ div.chapters>div:nth-of-type(even) .title {
 	justify-content: center
 }
 
-@media(max-width: 767px) {
+@media(max-width: 812px) {
 	.donation-cards-row {
 		flex-direction: column
 	}
@@ -593,21 +615,11 @@ div.chapters>div:nth-of-type(even) .title {
 	background-size: cover
 }
 
-.module-border-wrap {
-	max-width: 250px;
-	padding: 1rem;
-	position: relative;
-	background: linear-gradient(to right, red, purple);
-	padding: 3px;
+.goals {
+	width: 85%;
 }
 
-.module {
-	background: #222;
-	color: white;
-	padding: 2rem;
-}
-
-@media(min-width: 767px) {
+@media(min-width: 812px) {
 	div.sections>div:nth-of-type(even) {
 		flex-direction: row-reverse
 	}
@@ -618,16 +630,39 @@ div.chapters>div:nth-of-type(even) .title {
 	}
 }
 
-@media(max-width: 767px) {
-	.header-img-container {
+@media(max-width: 812px) {
+	.header-img {
 		display: none;
 		visibility: hidden;
+	}
+
+	.header-img-box .header-img-container .text {
+		width: 100%;
+		text-align: center;
+		line-height: normal;
+		font-size: 4em;
+	}
+
+	.header-img-box {
+		padding-top: 10vh;
+	}
+
+	.goalcontainer img {
+		margin-right: 20px;
+	}
+
+	.goalcontainer p {
+		font-size: 1.75em;
+		width: 100%;
+		font-family: "ClashGrotesk-Medium";
 	}
 
 	.sections {
 		width: 100vw;
 		border-radius: 0;
 		font-size: 0.8em;
+		padding-top: 3vh;
+		padding-bottom: 3vh;
 	}
 
 	.sections .title {
