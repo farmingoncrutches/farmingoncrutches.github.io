@@ -418,7 +418,9 @@ div.chapters>div:nth-of-type(even) .title {
 	justify-content: center;
 	align-items: center;
 	padding-left: 10vw;
-	padding-right: 10vw
+	padding-right: 10vw;
+	background-color: white;
+	border: none;
 }
 
 .donation-cards-row {
@@ -701,6 +703,8 @@ div.chapters>div:nth-of-type(even) .title {
 	}
 }
 
-iframe, object, embed {
-    max-width: 100%;
+iframe,
+object,
+embed {
+	max-width: 100%;
 }
