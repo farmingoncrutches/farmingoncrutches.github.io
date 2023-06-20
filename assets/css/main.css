@@ -244,8 +244,8 @@ h3:before {
 	flex-direction: row;
 	padding-top: 5vh;
 	/* padding-bottom: 3vw; */
-	padding-right: 10vw;
-	padding-left: 10vw;
+	padding-right: 5vw;
+	padding-left: 5vw;
 	justify-content: space-between;
 	align-items: center;
 }
@@ -255,16 +255,16 @@ h3:before {
 	/* top: 50%; */
 	/* left: 50%; */
 	/* transform: translate(-50%, -50%); */
-	width: 60%;
+	width: 50%;
 	padding-right: 4vw;
-	font-size: 6vw;
+	font-size: 5.5vw;
 	text-transform: uppercase;
 	letter-spacing: .05em;
-	line-height: 1.5em;
+	line-height: 1em;
 	color: black;
 	font-family: "ClashGrotesk-Bold";
 	text-align: end;
-	background: linear-gradient(to right, #72C0A7, #41C7F0);
+	background: linear-gradient(to right, #72C0A7, #A2DAEB);
 	/* Define your gradient colors */
 	-webkit-background-clip: text;
 	/* For Safari and older Chrome versions */
@@ -276,8 +276,19 @@ h3:before {
 
 .header-img {
 	border-radius: 2em;
-	width: 60%;
+	width: 50%;
 	filter: blur(0px);
+}
+
+.support-us-menu-item {
+	background: linear-gradient(to right, #72C0A7, #A2DAEB);
+	/* Define your gradient colors */
+	-webkit-background-clip: text;
+	/* For Safari and older Chrome versions */
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	/* Make the text transparent */
+	text-fill-color: transparent;
 }
 
 .chapters {
@@ -469,7 +480,7 @@ div.chapters>div:nth-of-type(even) .title {
 	border-radius: 2em;
 	margin-right: 10vh;
 	transition: .3s;
-	background: linear-gradient(to right, #72C0A7, #41C7F0);
+	background: linear-gradient(to right, #72C0A7, #A2DAEB);
 }
 
 .donation-card-20 .donation-card-title {
@@ -531,7 +542,7 @@ div.chapters>div:nth-of-type(even) .title {
 	display: flex;
 	background-color: #000;
 	transition: .25s;
-	background: linear-gradient(to right, #72C0A7, #68C5DB);
+	background: linear-gradient(to right, #72C0A7, #A2DAEB);
 }
 
 .donation-button:hover,

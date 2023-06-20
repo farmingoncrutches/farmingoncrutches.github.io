@@ -22,7 +22,7 @@ menu:
     link: /principles
   - name: Impact
     link: /impact
-  - name: Support Us
+  - name: <div class="support-us-menu-item">Support Us</div>
     link: /donate
 
 
